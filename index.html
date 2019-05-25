@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>React.js</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section data-background-image="assets/first.png"></section>
+				<section data-background-image="assets/React.jpg">
+					<h2>React</h2>
+					<p class="fragment fade-in">React is a JavaScript Library for Building User Interfaces</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Why do we use React?</h2>
+					<ul class="fsize">
+						<li class="fragment fade-in">Declarative & Composable</li>
+						<li class="fragment fade-in">One-Way Data Flow</li>
+						<li class="fragment fade-in">JSX</li>
+						<li class="fragment fade-in">Virtual DOM</li>
+						<li class="fragment fade-in">It's much easier to create mobile apps</li>
+					</ul>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Who Uses React?</h2>
+					<ul>
+						<li class="fragment fade-in">Facebook</li>
+						<li class="fragment fade-in">Instagram</li>
+						<li class="fragment fade-in">GitHub</li>
+						<li class="fragment fade-in">WhatsApp</li>
+						<li class="fragment fade-in">Codecademy</li>
+						<li class="fragment fade-in">Netflix</li>
+						<li class="fragment fade-in">PayPal</li>
+						<li class="fragment fade-in">Reddit</li>
+					</ul>	
+				</section>
+			</section>			
+			<section>
+				<section data-background-image="assets/React.jpg">
+					<h2>JSX</h2>
+					<p class="fragment fade-in">JSX is a combination of Javascript and XML code</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Syntax</h2>
+					<span class="fragment fade-in">
+						<p>JavaScript</p>
+						<img data-src="assets/JS.png" />
+					</span>
+					<span class="fragment fade-in">
+						<p>JSX</p>
+						<img data-src="assets/JSX.png" />
+					</span>
+				</section>
+			</section>			
+			<section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Virtual Document Object Model</h2>
+					<h4 class="fragment fade-in-then-out" data-fragment-index="1">What is the Virtual DOM?</h4>
+					<p class="fragment fade-in-from-right">The virtual DOM is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM.</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Shadow DOM !== Virtual DOM</h2>
+					<p>The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in
+						web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
+					</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Two basic steps to re-render</h2>
+					<p>Reconciliation - The algorithm which React uses to diff one tree with another to determine which parts need to be changed.</p>
+					<p>Update - A change in the data used to render a React app. Usually the result of `setState()`.  It's eventually results in a re-render.</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Result</h2>
+					<p>The Virtual DOM will only update what is necessary.</p>
+					<img data-src="assets/clock.gif"/>
+				</section>
+			</section>
+			<section>
+					<section data-background-image="assets/React.jpg">
+						<h2>Components</h2>
+						<p class="fragment fade-in-from-right">React components are small, reusable pieces of code that return a React element to be rendered to the page. The simplest version of React component is a plain JavaScript function that returns a React element:</p>
+						<img class="fragment fade-in-from-right" data-src="assets/JSX.png" />
+					</section>
+					<section data-background-image="assets/React.jpg">
+						<h2>Components</h2>
+						<p class="fragment fade-in-from-right">Components can also be ES6 classes or arrow functions</p>
+						<span class="fragment fade-in-from-right">
+							<p>ES6 arrow function:</p>
+							<img data-src="assets/arrow.png" />
+						</span>
+						<span class="fragment fade-in-from-right">	
+							<p>ES6 class:</p>
+							<img data-src="assets/class.png" />
+						</span>
+					</section>
+					<section data-background-image="assets/React.jpg">
+						<h2>Components</h2>
+						<p>Components can be broken down into distinct pieces of functionality and used within other components. Components can return other components, arrays, strings and numbers. A good rule of thumb is that if a part of your UI is used several times or is complex enough on its own it is a good candidate to be a reusable component.</p>
+					</section>
+					<section data-background-image="assets/React.jpg">
+						<h2>Components life cycle</h2>
+						<ul>
+							<li class="fragment fade-in-from-right">componentDidMount()</li>
+							<li class="fragment fade-in-from-right">componentDidUpdate()</li>
+							<li class="fragment fade-in-from-right">componentWillUnmount()</li>
+						</ul>
+					</section>
+					<section data-background-image="assets/React.jpg">
+						<h2>ReactDOM.render()</h2>
+						<p>ReactDOM.render creates the component, starts the framework, and injects HTML into a DOM node.</p>
+						<img data-src="assets/render.png" />
+						<img data-src="assets/render2.png" />
+					</section>
+			</section>
+			<section>
+				<section data-background-image="assets/React.jpg">
+					<h2>State and Props</h2>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Props</h2>
+					<p>Normally you start out with React’s JSX syntax for rendering something to the browser when learning about React.</p>
+					<img data-src="assets/props1.png" />
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Props</h2>
+					<p>Pretty soon you will split out your first React component.</p>
+					<img data-src="assets/props2.png" />
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>State</h2>
+					<p>A component needs state when some data associated with it changes over time. For example, a Checkbox component might need isChecked in its state, and a NewsFeed component might want to keep track of fetchedPosts in its state.</p>
+					<p>For each particular piece of changing data, there should be just one component that “owns” it in its state. Don’t try to synchronize states of two different components. Instead, lift it up to their closest shared ancestor, and pass it down as props to both of them.</p>
+				</section>
+				<section data-background-image="assets/React.jpg">
+					<h2>State</h2>
+					<p>In this case, the code uses a ternary operator to either show the greeting or not.</p>
+					<img data-src="assets/changestate.png" />
+				</section>
+			</section>
+			<section>
+				<section data-background-image="assets/React.jpg">
+					<h2>Thank you for attention!</h2>
+				</section>
+			</section>
+		</div>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			backgroundTransition: 'zoom',
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
